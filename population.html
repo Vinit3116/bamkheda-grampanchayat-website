@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gram Panchayat Bamkheda — Population</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+    <header class="gp-header">
+      <div class="container header-grid">
+        <div class="brand">
+          <img src="images/gov-emblem.png" alt="Government Emblem" class="emblem">
+          <div>
+            <h1>Gram Panchayat Bamkheda</h1>
+            <div class="sub">Taluka Shahada, District Nandurbar</div>
+          </div>
+        </div>
+        <div class="header-right">
+          <div id="google_translate_element" class="translate-widget"></div>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <div class="container nav-inner">
+          <ul id="mainNavList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="population.html" class="active">Population</a></li>
+            <li><a href="staff.html">Committees & Staff</a></li>
+            <li><a href="schemes.html">Schemes & Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-content container">
+      <h2 class="section-title">Population & Demographics</h2>
+      <p class="lead">Data from Panchayat records and Census 2011.</p>
+
+      <p class="intro-text">
+        Gram Panchayat Bamkheda was established on <strong>16/12/1953</strong>.  
+        Current leadership includes:  
+        <br> <strong>Sarpanch:</strong> Shri. Manoj Bansilal Chaudhari  
+        <br> <strong>Upsarpanch:</strong> Shri. Yogesh Subhash Chaudhari
+      </p>
+
+      <!-- General Population Table -->
+      <div class="table-wrapper">
+        <table class="population-table" aria-label="Population numbers">
+          <tbody>
+            <tr><th>Total Population (2011 Census)</th><td>3,318</td></tr>
+            <tr><th>Total Voters</th><td>2,416</td></tr>
+            <tr><th>Total Households</th><td>713</td></tr>
+            <tr><th>Below Poverty Line Households</th><td>101</td></tr>
+            <tr><th>Households with Toilets</th><td>713</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Caste/Community Breakdown -->
+      <h3 class="section-title" style="margin-top:18px">Community / Caste Breakdown</h3>
+      <div class="table-wrapper">
+        <table class="stats-table" aria-label="Caste breakdown">
+          <thead>
+            <tr><th>Group</th><th>Count</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Scheduled Castes (SC)</td><td>250</td></tr>
+            <tr><td>Scheduled Tribes (ST)</td><td>1,362</td></tr>
+            <tr><td>Others</td><td>1,706</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <p class="foot-note">© Gram Panchayat Bamkheda — <span id="yr" class="site-year"></span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="translate.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    // Nav toggle
+    (function() {
+      var t=document.getElementById('navToggle'),
+          n=document.getElementById('mainNavList');
+      if(t) t.addEventListener('click',function(){
+        n.classList.toggle('open');
+      });
+    })();
+  </script>
+</body>
+</html>

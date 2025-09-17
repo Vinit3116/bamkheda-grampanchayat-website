@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gram Panchayat Bamkheda — Members</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrapper">
+    <header class="gp-header">
+      <div class="container header-grid">
+        <div class="brand"><img src="images/gov-emblem.png" alt="Government Emblem" class="emblem"><div><h1>Gram Panchayat Bamkheda</h1><div class="sub">Taluka Shahada, District Nandurbar</div></div></div>
+        <div class="header-right">
+          <div id="google_translate_element" class="translate-widget"></div>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <div class="container nav-inner">
+          <ul id="mainNavList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html" class="active">Members</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="population.html">Population</a></li>
+            <li><a href="staff.html">Committees & Staff</a></li>
+            <li><a href="schemes.html">Schemes & Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content container">
+      <h2 class="section-title">Elected Members</h2>
+
+      <div class="member-grid" role="list">
+        <div class="member-card" role="listitem">
+          <img src="images/member-sarpanch.jpg" alt="Sarpanch">
+          <h3>Sarpanch</h3>
+          <p class="kv">Name: Manoj Bansilal Chaudhari</p>
+        </div>
+
+        <div class="member-card" role="listitem">
+          <img src="images/member-upsarpanch.jpg" alt="Deputy Sarpanch">
+          <h3>Deputy Sarpanch</h3>
+          <p class="kv">Name: Yogesh Subhash Chaudhari</p>
+        </div>
+
+        <!-- Ward members -->
+        <div class="member-card"><img src="images/member-ward1.jpg" alt="Ward 1"><h3>Ward 1</h3><p>Leena Manoj Chaudhari</p></div>
+        <div class="member-card"><img src="images/member-ward2.jpg" alt="Ward 2"><h3>Ward 2</h3><p>Pramila Devdas Bhil</p></div>
+        <div class="member-card"><img src="images/member-ward3.jpg" alt="Ward 3"><h3>Ward 3</h3><p>Jagan Totaram Kapure</p></div>
+        <div class="member-card"><img src="images/member-ward4.jpg" alt="Ward 4"><h3>Ward 4</h3><p>Ukhadu Gulu Bhil</p></div>
+        <div class="member-card"><img src="images/member-ward5.jpg" alt="Ward 5"><h3>Ward 5</h3><p>Tukaram Bhil</p></div>
+        <div class="member-card"><img src="images/member-ward6.jpg" alt="Ward 6"><h3>Ward 6</h3><p>Rajasbai Tukaram Bhil</p></div>
+        <div class="member-card"><img src="images/member-ward7.jpg" alt="Ward 7"><h3>Ward 7</h3><p>Kalpana Pramod Chaudhari</p></div>
+        <div class="member-card"><img src="images/member-ward8.jpg" alt="Ward 8"><h3>Ward 8</h3><p>Surekha Jeevan Sonawane</p></div>
+        <div class="member-card"><img src="images/member-ward9.jpg" alt="Ward 9"><h3>Ward 9</h3><p>Kanchanbai Bhalsang Bhil</p></div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col"><p class="foot-note">© Gram Panchayat Bamkheda — <span id="yr" class="site-year"></span></p></div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="translate.js"></script>
+  <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <script>
+    (function(){
+      var navToggle = document.getElementById('navToggle'), nav = document.getElementById('mainNavList');
+      if(navToggle) navToggle.addEventListener('click', function(){ nav.classList.toggle('open'); });
+    })();
+  </script>
+</body>
+</html>

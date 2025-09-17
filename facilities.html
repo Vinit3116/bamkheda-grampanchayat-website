@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gram Panchayat Bamkheda — Facilities</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Modal styling */
+    .modal {
+      display:none; position:fixed; z-index:9999;
+      left:0; top:0; width:100%; height:100%;
+      background:rgba(0,0,0,0.6);
+      justify-content:center; align-items:center;
+    }
+    .modal-content {
+      background:#fff; padding:20px; border-radius:8px;
+      max-width:700px; width:90%;
+      max-height:80vh; overflow-y:auto;
+      box-shadow:0 4px 12px rgba(0,0,0,0.3);
+      animation:fadeIn 0.3s ease;
+    }
+    .modal-content img {
+      max-width:100%; border-radius:6px; margin-bottom:12px;
+    }
+    .modal h3 { margin-bottom:8px; color:var(--primary); }
+    .modal p { margin-bottom:10px; }
+    .close-btn {
+      float:right; font-size:22px; font-weight:bold;
+      cursor:pointer; color:#555;
+    }
+    .close-btn:hover { color:#000; }
+    @keyframes fadeIn {
+      from {opacity:0; transform:translateY(-10px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+    <header class="gp-header">
+      <div class="container header-grid">
+        <div class="brand">
+          <img src="images/gov-emblem.png" alt="Government Emblem" class="emblem">
+          <div>
+            <h1>Gram Panchayat Bamkheda</h1>
+            <div class="sub">Taluka Shahada, District Nandurbar</div>
+          </div>
+        </div>
+        <div class="header-right">
+          <div id="google_translate_element" class="translate-widget"></div>
+          <button class="nav-toggle" id="navToggle">☰</button>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container nav-inner">
+          <ul id="mainNavList">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="facilities.html" class="active">Facilities</a></li>
+            <li><a href="population.html">Population</a></li>
+            <li><a href="staff.html">Committees & Staff</a></li>
+            <li><a href="schemes.html">Schemes & Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main class="main-content container">
+      <h2 class="section-title">Facilities & Services</h2>
+      <p class="lead">Click on any facility to see images and more details.</p>
+
+      <div class="facility-grid">
+        <div class="facility-card" onclick="openModal('schoolsModal')">
+          <h3>Schools</h3>
+          <p>Primary & secondary schools. Local Anganwadi Centres for early childhood support.</p>
+        </div>
+
+        <div class="facility-card" onclick="openModal('healthModal')">
+          <h3>Primary Health Centre (PHC)</h3>
+          <p>PHC with Medical Officer and staff. ASHA and ANM workers at village level.</p>
+        </div>
+
+        <div class="facility-card" onclick="openModal('waterModal')">
+          <h3>Water Supply</h3>
+          <p>Community water tanks and household connections managed by Panchayat.</p>
+        </div>
+
+        <div class="facility-card" onclick="openModal('sanitationModal')">
+          <h3>Sanitation & Waste</h3>
+          <p>Public toilets, garbage bins, and 713 households with toilet coverage.</p>
+        </div>
+
+        <div class="facility-card" onclick="openModal('postModal')">
+          <h3>Post Office & Bank</h3>
+          <p>Village Post Office and local bank/ATM access for financial services.</p>
+        </div>
+
+        <div class="facility-card" onclick="openModal('communityModal')">
+          <h3>Community Facilities</h3>
+          <p>Playground, community hall and cultural activity spaces managed by Panchayat.</p>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <p class="foot-note">© Gram Panchayat Bamkheda — <span id="yr" class="site-year"></span></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- MODALS -->
+
+  <!-- Schools -->
+ <!-- Schools Modal -->
+<div id="schoolsModal" class="modal">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeModal('schoolsModal')">&times;</span>
+    <h3>Schools</h3>
+
+    <!-- Images -->
+    <div class="modal-images">
+      <img src="images/Zila Parishad.jpg" alt="Zilla Parishad School" />
+      <img src="images/Arts School.jpg" alt="High School" />
+      <img src="images/Library.jpg" alt="Village Library" />
+    </div>
+
+    <p class="note"><strong>Details:</strong> Student and class-wise information from Panchayat records.</p>
+
+    <!-- Primary School Table -->
+    <h4>Zilla Parishad Primary School (Classes 1–4)</h4>
+    <div class="table-wrapper">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Boys</th>
+            <th>Girls</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1st</td><td>4</td><td>2</td></tr>
+          <tr><td>2nd</td><td>4</td><td>7</td></tr>
+          <tr><td>3rd</td><td>5</td><td>3</td></tr>
+          <tr><td>4th</td><td>5</td><td>4</td></tr>
+          <tr><th>Total</th><th colspan="2">34</th></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Upper Primary (5–8) -->
+    <h4>P.M.C. Madhyamik & I.H. Patel High School (Classes 5–8)</h4>
+    <div class="table-wrapper">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Boys</th>
+            <th>Girls</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>5th</td><td>40</td><td>30</td></tr>
+          <tr><td>6th</td><td>41</td><td>30</td></tr>
+          <tr><td>7th</td><td>62</td><td>36</td></tr>
+          <tr><td>8th</td><td>45</td><td>33</td></tr>
+          <tr><th>Total</th><th colspan="2">317</th></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Secondary / Higher Secondary (9–12) -->
+    <h4>P.M.C. Madhyamik & I.H. Patel High School (Classes 9–12)</h4>
+    <div class="table-wrapper">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Class</th>
+            <th>Boys</th>
+            <th>Girls</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>9th</td><td>51</td><td>31</td></tr>
+          <tr><td>10th</td><td>48</td><td>30</td></tr>
+          <tr><td>11th</td><td>25</td><td>15</td></tr>
+          <tr><td>12th</td><td>19</td><td>20</td></tr>
+          <tr><th>Total</th><th colspan="2">239</th></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Anganwadi Info -->
+    <h4>Anganwadi Centres</h4>
+    <div class="table-wrapper">
+      <table class="stats-table">
+        <thead>
+          <tr>
+            <th>Centre</th>
+            <th>Boys</th>
+            <th>Girls</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Bamkheda Centre 1</td><td>34</td><td>35</td><td>69</td></tr>
+          <tr><td>Bamkheda Centre 2</td><td>20</td><td>11</td><td>31</td></tr>
+          <tr><td>Bamkheda Centre 3</td><td>42</td><td>40</td><td>82</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+   <!-- Health -->
+  <div id="healthModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('healthModal')">&times;</span>
+      <h3>Primary Health Centre (PHC)</h3>
+      <div class="modal-images">
+        <img src="images/PHC.jpg" alt="Health Centre building">
+        <img src="images/6.jpg" alt="Inside PHC services">
+      </div>
+      <p><strong>Details:</strong> The Primary Health Centre in Bamkheda provides essential healthcare services.  
+      It has an Outpatient Department (OPD), maternal and child care services, immunization drives, and first aid facilities.  
+      Staff includes one Medical Officer, Community Health Officers, ANM nurses, and ASHA workers covering all village households.  
+      The PHC also conducts regular health camps and awareness programs.</p>
+    </div>
+  </div>
+
+  <!-- Water -->
+  <div id="waterModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('waterModal')">&times;</span>
+      <h3>Water Supply</h3>
+      <div class="modal-images">
+        <img src="images/Methan Plant.jpg" alt="Village water supply system">
+      </div>
+      <p><strong>Details:</strong> Bamkheda village has multiple overhead tanks and borewells managed by the Panchayat.  
+      More than 700 households receive piped drinking water connections.  
+      Daily distribution is monitored by dedicated staff to ensure clean and safe water.  
+      The Panchayat has also installed a Methan Plant for efficient waste-water management and recycling.</p>
+    </div>
+  </div>
+
+  <!-- Sanitation -->
+  <div id="sanitationModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('sanitationModal')">&times;</span>
+      <h3>Sanitation & Waste Management</h3>
+      <div class="modal-images">
+        <img src="images/Sanitation 1.jpg" alt="Sanitation awareness">
+        <img src="images/Sanitation 2.jpg" alt="Public toilet facility">
+        <img src="images/Sanitation 3.jpg" alt="Village cleanliness drive">
+        <img src="images/Sanitation 4.jpg" alt="Solid waste collection">
+      </div>
+      <p><strong>Details:</strong> The Panchayat has ensured 100% toilet coverage across all 713 households.  
+      Public toilets are maintained for travelers and gatherings.  
+      Waste is collected daily using bins placed in key village areas, with proper disposal and composting practices.  
+      Regular cleanliness drives are held to maintain hygiene and spread awareness under the Swachh Bharat Mission.</p>
+    </div>
+  </div>
+
+  <!-- Post & Bank -->
+  <div id="postModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('postModal')">&times;</span>
+      <h3>Post Office & Banking Services</h3>
+      <div class="modal-images">
+        <img src="images/ATM.jpg" alt="Local bank ATM">
+        <img src="images/Anganwadi.jpg" alt="Post office building">
+        <img src="images/Kisan Office.jpg" alt="Bank customer service">
+      </div>
+      <p><strong>Details:</strong> Bamkheda has a local Post Office for postal services, money orders, and savings accounts.  
+      Residents also have access to nearby cooperative banks and nationalized banks with ATM facilities.  
+      Farmers benefit from Kisan Credit Cards and rural banking initiatives.  
+      Digital banking services are also being introduced for ease of transactions.</p>
+    </div>
+  </div>
+
+  <!-- Community -->
+  <div id="communityModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeModal('communityModal')">&times;</span>
+      <h3>Community Facilities</h3>
+      <div class="modal-images">
+        <img src="images/1.jpg" alt="Community hall">
+        <img src="images/2.jpg" alt="Village playground">
+        <img src="images/3.jpg" alt="Cultural event stage">
+        <img src="images/4.jpg" alt="Indoor hall facilities">
+        <img src="images/5.jpg" alt="Indoor hall facilities">
+        <img src="images/7.jpg" alt="Indoor hall facilities">
+        <img src="images/8.jpg" alt="Indoor hall facilities">
+        <img src="images/9.jpg" alt="Indoor hall facilities">
+        <img src="images/10.jpg" alt="Indoor hall facilities">
+        <img src="images/11.jpg" alt="Indoor hall facilities">
+        <img src="images/12.jpg" alt="Indoor hall facilities">
+        <img src="images/13.jpg" alt="Indoor hall facilities">
+        <img src="images/14.jpg" alt="Indoor hall facilities">
+        <img src="images/15.jpg" alt="Indoor hall facilities">
+        <img src="images/16.jpg" alt="Indoor hall facilities">
+      </div>
+      <p><strong>Details:</strong> The Panchayat maintains a multipurpose Community Hall used for cultural programs,  
+      Gram Sabha meetings, and public gatherings.  
+      A dedicated playground is available for schoolchildren and youth sports activities.  
+      Additional facilities include seating areas, small libraries, and spaces for women’s self-help groups.  
+      Festivals and national celebrations are organized here, strengthening social bonds in the village.</p>
+    </div>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="translate.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display="flex";
+    }
+    function closeModal(id) {
+      document.getElementById(id).style.display="none";
+    }
+    // Close modal when clicking outside content
+    window.onclick=function(e){
+      document.querySelectorAll('.modal').forEach(function(m){
+        if(e.target===m){m.style.display="none";}
+      });
+    };
+    // Nav toggle
+    (function(){
+      var t=document.getElementById('navToggle'),
+          n=document.getElementById('mainNavList');
+      if(t) t.addEventListener('click',function(){n.classList.toggle('open')});
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gram Panchayat Bamkheda — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="page-wrapper">
+    <!-- HEADER -->
+    <header class="gp-header">
+      <div class="container header-grid">
+        <div class="brand">
+          <img src="images/gov-emblem.png" alt="Government Emblem" class="emblem">
+          <div>
+            <h1>Gram Panchayat Bamkheda</h1>
+            <div class="sub">Taluka Shahada, District Nandurbar — Gram Administration</div>
+          </div>
+        </div>
+
+        <div class="header-right">
+          <div id="google_translate_element" class="translate-widget" aria-hidden="false"></div>
+          <div class="contact-short">
+            <div><strong>Email:</strong> vptbamakhedatt756@gmail.com</div>
+          </div>
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-label="Toggle navigation">☰</button>
+        </div>
+      </div>
+
+      <nav class="main-nav">
+        <div class="container nav-inner">
+          <ul id="mainNavList">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="population.html">Population</a></li>
+            <li><a href="staff.html">Committees & Staff</a></li>
+            <li><a href="schemes.html">Schemes & Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content container" id="main">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-left">
+          <h2>Welcome to Gram Panchayat Bamkheda</h2>
+          <p class="lead">
+            Established on 16/12/1953, Gram Panchayat Bamkheda is committed to providing transparent and citizen-friendly governance. 
+            This portal offers verified information about elected representatives, public facilities, demographic data, and official contacts.
+            Use the language option (top-right) to view this website in Marathi.
+          </p>
+          <div class="quick-actions">
+            <a class="btn" href="members.html">Meet the Members</a>
+            <a class="btn ghost" href="facilities.html">Explore Facilities</a>
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="images/village-banner-2.jpg" alt="Village landscape view" class="hero-img">
+        </div>
+      </section>
+
+      <!-- Overview Section -->
+      <section class="overview-grid" aria-labelledby="overviewTitle">
+        <article>
+          <h3 id="overviewTitle" class="section-title">Village Overview</h3>
+          <p>
+            Bamkheda village is located near the Shahada–Shirpur road, close to the Tapi river and surrounded by forested areas. 
+            The Panchayat ensures availability of basic civic amenities such as schools, a health centre, water supply, and sanitation.
+          </p>
+        </article>
+
+        <article>
+          <h3 class="section-title">Population (2011 Census)</h3>
+          <p>
+            Total Population: <strong>3,318</strong><br>
+            Male: 1,739 &nbsp; | &nbsp; Female: 1,579<br>
+            Children (0–6 years): 512
+          </p>
+        </article>
+
+        <article>
+          <h3 class="section-title">Quick Contacts</h3>
+          <p>
+            Email: vptbamakhedatt756@gmail.com<br>
+          </p>
+        </article>
+      </section>
+
+      <!-- Key Officials -->
+      <section style="margin-top:25px;">
+        <h3 class="section-title">Key Officials</h3>
+        <div class="member-grid">
+          <div class="member-card">
+            <img src="images/member-sarpanch.jpg" alt="Sarpanch photo placeholder">
+            <h3>Sarpanch</h3>
+            <p>Manoj Bansilal Chaudhari</p>
+          </div>
+          <div class="member-card">
+            <img src="images/panchyat adhikari.jpg" alt="Panchyat Adhikari photo placeholder">
+            <h3>Gram Panchayat Adhikari</h3>
+            <p>H. R. Wanjare</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <h4>Gram Panchayat Bamkheda</h4>
+          <p>Near Market Road, Bamkheda, Taluka Shahada, District Nandurbar</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="members.html">Members</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="population.html">Population</a></li>
+            <li><a href="staff.html">Committees & Staff</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container" style="text-align:center; margin-top:10px;">
+        <p class="foot-note">© Gram Panchayat Bamkheda — <span id="yr"></span></p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="translate.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+    // Nav toggle
+    (function(){
+      var navToggle = document.getElementById('navToggle');
+      var nav = document.getElementById('mainNavList');
+      if(navToggle && nav){
+        navToggle.addEventListener('click', function(){
+          nav.classList.toggle('open');
+          var expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', !expanded);
+        });
+      }
+      // Highlight active link
+      var links = document.querySelectorAll('.main-nav a, #mainNavList a');
+      var path = location.pathname.split("/").pop() || "index.html";
+      links.forEach(function(a){
+        var href = a.getAttribute('href');
+        if(href && href.indexOf(path) !== -1){
+          a.classList.add('active');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
