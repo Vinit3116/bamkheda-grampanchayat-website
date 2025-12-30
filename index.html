@@ -6,6 +6,39 @@
   <title>Gram Panchayat Bamkheda — Home</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .download-section {
+      background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+      border: 2px solid #e2e8f0;
+      text-align: center;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 14px 32px;
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 16px;
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+      transition: all 0.3s ease;
+      margin: 10px;
+    }
+    .download-btn:hover {
+      background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+    }
+    .file-info {
+      margin-top: 1rem;
+      color: #64748b;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
   <div class="page-wrapper">
@@ -62,6 +95,21 @@
         </div>
         <div class="hero-right">
           <img src="images/village-banner-2.jpg" alt="Village landscape view" class="hero-img">
+        </div>
+      </section>
+
+      <!-- OFFICIAL DOCUMENT DOWNLOAD -->
+      <section class="download-section">
+        <h3 style="color: #1e293b; margin-bottom: 1rem;">📄 Official Documents</h3>
+        <p style="color: #475569; margin-bottom: 1.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+          Download the official CMS Abhiyan document for Gram Panchayat Bamkheda
+        </p>
+        <a href="CMS-Abhiyan-Bamkheda.docx" download class="download-btn">
+          📥 Download CMS Abhiyan Document (23MB)
+        </a>
+        <div class="file-info">
+          <strong>File:</strong> CMS Abhiyan - Bamkheda Gram Panchayat<br>
+          <strong>Format:</strong> Microsoft Word Document (.docx) | <strong>Size:</strong> 23MB
         </div>
       </section>
 
@@ -160,6 +208,9 @@
         }
       });
     })();
+    
+    // Set current year in footer
+    document.getElementById('yr').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
